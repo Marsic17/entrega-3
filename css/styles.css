@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  width: 7%;
+  border-radius: 9px;
+  background-color: green;
+  color: white;
+}
+/* Asegúrate de que el contenedor de las tarjetas esté configurado para usar Flexbox */
+/* Contenedor de las tarjetas */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para el contenedor de la tarjeta */
+.col-sm-12.col-md-6.col-lg-4 {
+    flex: 0 0 100%;
+    margin: 1em;
+}
+
+@media (min-width: 768px) {
+    .col-sm-12.col-md-6.col-lg-4 {
+        flex: 0 0 calc(50% - 2em); /* 50% para 2 tarjetas por fila */
+    }
+}
+
+/* En pantallas grandes (>= 992px), mostrar 3 tarjetas por fila */
+@media (min-width: 992px) {
+    .col-sm-12.col-md-6.col-lg-4 {
+        flex: 0 0 calc(33.33% - 2em); /* 33.33% para 3 tarjetas por fila */
+    }
+}
+
+/* Estilos para la tarjeta en sí */
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Estilos para la imagen de la tarjeta */
+.card .card-img-top {
+    width: 50%;
+    height: 50%;
+
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.card .card-body {
+    padding: 1em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para el título de la tarjeta */
+.card .card-body .card-title {
+    margin: 0;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Estilos para el texto de la tarjeta */
+.card .card-body .card-text {
+    flex: 1;
+}
+
+/* Estilos para el botón de la tarjeta */
+.card .card-body .button {
+    margin-top: auto;
+    align-self: center;
+}
+
+/* Estilos para la tarjeta en sí */
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Estilos para la imagen de la tarjeta */
+.card .card-img-top {
+    width: 100%;
+    height: 200px;
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.card .card-body {
+    padding: 1em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para el título de la tarjeta */
+.card .card-body .card-title {
+    margin: 0;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Estilos para el texto de la tarjeta */
+.card .card-body .card-text {
+    flex: 1;
+}
+
+/* Estilos para el botón de la tarjeta */
+.card .card-body .button {
+    margin-top: auto;
+    align-self: center;
+}
